@@ -33,10 +33,12 @@ const Featured = () => {
                         </h1>
                         <div className="card w-full rounded-xl h-full overflow-hidden">
                             <img 
-                                className="w-full h-full object-cover" 
-                                src="https://ochi.design/wp-content/uploads/2023/09/Frame-3875-1326x1101.jpg" 
+                                className="w-full h-full object-cover brightness-75 contrast-125" 
+                                src="/feature star.avif" 
                                 alt="Featured Project" 
+                                loading="eager"
                             />
+                            <div className="absolute inset-0 bg-[#CDEA68]/5 mix-blend-overlay"></div>
                         </div>
                     </motion.div>
                     <motion.div onHoverStart={()=>handleHover(1)}
@@ -50,10 +52,12 @@ const Featured = () => {
                         </h1>
                         <div className="card w-full overflow-hidden rounded-xl h-full">
                             <img 
-                                className="w-full h-full object-cover" 
-                                src="https://ochi.design/wp-content/uploads/2023/09/Frame-3875-1326x1101.jpg" 
+                                className="w-full h-full object-cover brightness-75 contrast-125" 
+                                src="/feature nature.avif" 
                                 alt="Featured Project" 
+                                loading="eager"
                             />
+                            <div className="absolute inset-0 bg-[#CDEA68]/5 mix-blend-overlay"></div>
                         </div>
                     </motion.div>
             </div>

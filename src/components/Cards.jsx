@@ -18,7 +18,7 @@ const Cards = () => {
             </div>
             <div className="card relative w-full rounded-xl h-full bg-[#192826] flex items-center justify-center">
                <img className="w-32" src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg" alt="" />
-               <button className="absolute px-5 py-1 border-2 left-10 bottom-10 rounded-full">&copy;2020</button>
+               <button className="absolute px-5 py-1 border-2 left-10 bottom-10 rounded-full">&copy;2025</button>
             </div>
 
            
