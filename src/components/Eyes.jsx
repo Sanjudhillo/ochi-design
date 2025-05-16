@@ -27,10 +27,10 @@ const Eyes = () => {
                 <img 
                     src="/eyes bg.avif" 
                     alt="Background" 
-                    className="w-full h-full object-cover brightness-90 contrast-125"
+                    className="w-full h-full object-cover brightness-75 contrast-125"
                     loading="eager"
                 />
-                <div className="absolute inset-0 bg-[#CDEA68]/10 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-[#CDEA68]/5 mix-blend-overlay"></div>
                 <div className='flex gap-10 absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] rounded'>
                     <div className=' flex items-center justify-center w-[15vw] h-[15vw] rounded-full bg-zinc-100'>
                         <div className="relative w-2/3 h-2/3 bg-zinc-900 rounded-full">
