@@ -23,7 +23,7 @@ const Featured = () => {
             <div className="cards w-full flex gap-10 mt-10">
                     <motion.div onHoverStart={()=>handleHover(0)}
                     onHoverEnd={()=>{handleHoverEnd(0)}}
-                    className="cardcontainer w-1/2 h-[75vh] relative">
+                    className="cardcontainer w-[calc(50%-5px)] h-[75vh] relative">
                        
                         <h1 className="absolute flex text-[#CDEA68] overflow-hidden right-0 top-1/2 translate-x-1/2 -translate-y-1/2 z-[9] leading-none text-8xl font-regular tracking-tight">
                         {"FYDE".split('').map((item,index) =>
@@ -42,7 +42,7 @@ const Featured = () => {
                         </div>
                     </motion.div>
                     <motion.div onHoverStart={()=>handleHover(1)}
-                    onHoverEnd={()=>{handleHoverEnd(1)}} className="cardcontainer w-1/2 h-[75vh] relative">
+                    onHoverEnd={()=>{handleHoverEnd(1)}} className="cardcontainer w-[calc(50%-5px)] h-[75vh] relative">
                         <h1 className="absolute flex overflow-hidden text-[#CDEA68] right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] tracking-tight leading-none text-8xl font-regular">
                         {"VISE".split('').map((item,index) =>
                           <motion.span initial={{y:"100%"}} animate={cards[1]}
