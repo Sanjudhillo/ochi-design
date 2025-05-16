@@ -25,27 +25,35 @@ const Featured = () => {
                     onHoverEnd={()=>{handleHoverEnd(0)}}
                     className="cardcontainer w-1/2 h-[75vh] relative">
                        
-                        <h1 className="absolute flex text-[#CDEA68] overflow-hidden right-0 top-1/2 translate-x-1/2 -translate-y-1/2  z-[9] leading-none text-8xl font-regular tracking-tight">
+                        <h1 className="absolute flex text-[#CDEA68] overflow-hidden right-0 top-1/2 translate-x-1/2 -translate-y-1/2 z-[9] leading-none text-8xl font-regular tracking-tight">
                         {"FYDE".split('').map((item,index) =>
-                          <motion.span initial={{y:"100"}} animate={cards[0]}
+                          <motion.span initial={{y:"100%"}} animate={cards[0]}
                           transition={{ease:[0.2 , 1 , 0.36 ,1], delay:index*.01}}
                           className="inline-block" >{item}</motion.span>)}
                         </h1>
                         <div className="card w-full rounded-xl h-full overflow-hidden">
-                            <img className="w-full h-full bg-cover" src="https://ochi.design/wp-content/uploads/2025/02/Salience_Website_cover-1326x1101.png" alt="" />
+                            <img 
+                                className="w-full h-full object-cover" 
+                                src="https://ochi.design/wp-content/uploads/2023/09/Frame-3875-1326x1101.jpg" 
+                                alt="Featured Project" 
+                            />
                         </div>
                     </motion.div>
                     <motion.div onHoverStart={()=>handleHover(1)}
-                    onHoverEnd={()=>{handleHoverEnd(1)}} className="cardcontainer  w-1/2 h-[75vh] relative">
-                        <h1 className="absolute flex overflow-hidden text-[#CDEA68] right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] tracking-tight Leading-none text-8xl font-regular">
+                    onHoverEnd={()=>{handleHoverEnd(1)}} className="cardcontainer w-1/2 h-[75vh] relative">
+                        <h1 className="absolute flex overflow-hidden text-[#CDEA68] right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] tracking-tight leading-none text-8xl font-regular">
                         {"VISE".split('').map((item,index) =>
-                          <motion.span initial={{y:"100"}} animate={cards[1]}
+                          <motion.span initial={{y:"100%"}} animate={cards[1]}
                           transition={{ease:[0.22, 1 , 0.36 ,1],
                              delay:index*.01}}
                           className="inline-block" >{item}</motion.span>)}
                         </h1>
                         <div className="card w-full overflow-hidden rounded-xl h-full">
-                            <img className="w-full h-full bg-cover" src="https://ochi.design/wp-content/uploads/2024/08/CS_Website_1-1326x1101.png" alt="" />
+                            <img 
+                                className="w-full h-full object-cover" 
+                                src="https://ochi.design/wp-content/uploads/2023/09/Frame-3875-1326x1101.jpg" 
+                                alt="Featured Project" 
+                            />
                         </div>
                     </motion.div>
             </div>

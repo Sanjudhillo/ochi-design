@@ -13,7 +13,14 @@ const About = () => {
                     <div className='w-3 h-3 bg-zinc-100 rounded-full'></div>
                 </button>
                 </div>
-                <div className='w-1/2 h-[70vh] bg-[#b0c859] rounded-3xl'></div>
+                <div className='w-1/2 h-[70vh] bg-[#b0c859] rounded-3xl overflow-hidden relative'>
+                    <img 
+                        src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-1326x1101.jpg" 
+                        alt="Ochi Design Studio" 
+                        className="w-full h-full object-cover object-center brightness-110 contrast-125 hover:scale-105 transition-all duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#b0c859]/20"></div>
+                </div>
             </div>
         </div>
 
